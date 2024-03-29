@@ -18,8 +18,6 @@ body {
 
   max-width: 1182px;
 
-  overflow: hidden;
-
   background-image: url(../images/bg-top.svg);
   background-repeat: no-repeat;
 
@@ -29,11 +27,12 @@ body {
   border: 2px solid rgb(196, 196, 196);
   // border: 2px solid #eeeff1;
 
-  overflow: visible;
+  // overflow: hidden;
+  // overflow: visible;
 }
 
 .main-content {
-  position: relative;
+  // position: relative;
   width: 100%;
   padding-top: 40px;
   padding-right: 32px;
@@ -238,9 +237,9 @@ body {
     overflow: hidden;
   }
 
-  &:nth-child(2)::before {
-    mask-position: 0% 100%;
-  }
+  // &:nth-child(2)::before {
+  //   mask-position: 0% 100%;
+  // }
 
   // Use this when salary section is visible
   // &:not(:last-child)::before {
@@ -268,7 +267,7 @@ body {
 }
 
 .hero__skills-item {
-  margin-right: 6px;
+  margin-right: 4px;
   margin-bottom: 6px;
   // padding: 6px 14px;
   padding: 4px 8px;
@@ -284,4 +283,8 @@ body {
   border-color: #247a81;
   border-style: solid;
   border-width: 1px;
+
+  &:first-child {
+    margin-left: 10px;
+  }
 }

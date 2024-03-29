@@ -296,16 +296,13 @@ body {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   max-width: 1182px;
-  overflow: hidden;
   background-image: url(../images/bg-top.svg);
   background-repeat: no-repeat;
   background-color: #fff;
   border: 2px solid rgb(196, 196, 196);
-  overflow: visible;
 }
 
 .main-content {
-  position: relative;
   width: 100%;
   padding-top: 40px;
   padding-right: 32px;
@@ -505,10 +502,6 @@ body {
           mask-repeat: no-repeat;
   overflow: hidden;
 }
-.hero__item:nth-child(2)::before {
-  -webkit-mask-position: 0% 100%;
-          mask-position: 0% 100%;
-}
 
 .hero__skills-list {
   display: -webkit-box;
@@ -526,7 +519,7 @@ body {
 }
 
 .hero__skills-item {
-  margin-right: 6px;
+  margin-right: 4px;
   margin-bottom: 6px;
   padding: 4px 8px;
   font-size: 18px;
@@ -538,6 +531,9 @@ body {
   border-color: #247a81;
   border-style: solid;
   border-width: 1px;
+}
+.hero__skills-item:first-child {
+  margin-left: 10px;
 }
 
 .sidebar {
