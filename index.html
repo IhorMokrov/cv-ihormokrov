@@ -1,24 +1,10 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QH1QP3MNZD"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-QH1QP3MNZD');
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Frontend developer Ihor Mokrov</title>
+    <title>CV Analyst Ihor Mokrov</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -29,32 +15,56 @@
       </button>
       <div class="main-content">
         <div class="hero">
-          <h1 class="hero__name">
-            <span class="uk">Ігор Мокров</span>
+          <h1 class="">
+            <div class="hero__title uk">
+              <span class="hero__name">Ігор Мокров</span
+              ><span class="hero__salary"></span>
+            </div>
             <span class="en">Ihor Mokrov</span>
           </h1>
-          <h2 class="hero__position">Frontend developer</h2>
-          <p class="hero__text">
-            <span class="en">
-              Hello! Before we start, let me shortly introduce myself. I'm
-              improving my skills in Frontend technologies and can now create
-              landing pages or multipage websites with responsive and adaptive
-              design from start to end. I also have useful work experience from
-              my previous jobs in analytical and consecutive thinking, which
-              helps me perform my best. If I don't know the solution, I will
-              find it.</span
-            >
-            <span class="uk">
-              Привіт! Маю досвід створення лендінгів та багатосторінкових
-              веб-сайтів з адаптивним та респонсів дизайном. Розумію принцип
-              mobile first. <br />WordPress’ом раніше вже цікавився - розгортав
-              на локальному сервері. <br />Мій стек технологій: HTML, CSS, SCSS,
-              JavaScript. <br />Серед графічних редакторів віддаю перевагу
-              Figma, але й досить добре знаю Photoshop. <br />Із релевантного
-              попереднього досвіду - це робота із базами даних, бізнес-аналіз,
-              AI-запити.
-            </span>
-          </p>
+          <h2 class="hero__position">Data Analyst</h2>
+
+          <div class="hero__text">
+            <!-- <span class="en"> ...</span> -->
+            <div class="uk">
+              <ul class="hero__list">
+                <li class="hero__item">
+                  Більше 6 років досвіду роботи фінансовим аналітиком у банку
+                </li>
+                <li class="hero__item">
+                  <ul class="hero__skills-list">
+                    <div class="hero__skills-title">Впевнене володіння</div>
+                    <li class="hero__skills-item">Power BI</li>
+                    <li class="hero__skills-item">SQL</li>
+                    <li class="hero__skills-item">Google Analytics</li>
+                    <li class="hero__skills-item">Google BigQuery</li>
+                    <li class="hero__skills-item">Looker Studio</li>
+                    <li class="hero__skills-item">Excel</li>
+                    <li class="hero__skills-item">SAP ERP</li>
+                  </ul>
+
+                  <!-- Power BI,
+                  SQL, Google Analytics, Google BigQuery, Looker Studio, Excel,
+                  SAP ERP. -->
+                </li>
+                <li class="hero__item">Побудова дашбордів</li>
+                <li class="hero__item">Підготовка презентацій</li>
+                <li class="hero__item">Розуміння принципів REST API</li>
+                <li class="hero__item">
+                  Використання Jira та GIT для управління проектами та командної
+                  роботи,
+                </li>
+                <li class="hero__item">
+                  а також навичок веб-розробки для поглибленого аналізу
+                  веб-застосунків
+                </li>
+
+                <li class="hero__item visually-hidden">
+                  Очікуваний рівень з/п: 35000 - 45000 грн
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div class="contacts">
             <a
@@ -101,7 +111,7 @@
               ><span class="en">WORK EXPERIENCE</span>
             </h3>
           </div>
-
+          <!-- 
           <div class="job__container section-title__job__container pet-project">
             <h4 class="job__title">Pet-project</h4>
             <p class="job__position">
@@ -112,7 +122,7 @@
             <ul class="job__skills-list">
               <li class="job__skill-item">
                 <span class="uk"
-                  >Індивідуальний пет-проект для демонстрації варіанту
+                  >Індивідуальний пет-проєкт для демонстрації варіанту
                   багатосторінкового веб-сайту з адаптивною версткою,
                   розробленого на базі BEM-методології та мобільно-орієнтованої
                   версії.</span
@@ -123,6 +133,53 @@
                   with responsive design, developed using the BEM methodology
                   and optimized for mobile devices.</span
                 >
+              </li>
+            </ul>
+          </div> -->
+
+          <div class="job__container section-title__job__container pet-project">
+            <h4 class="job__title">Портфоліо</h4>
+
+            <p class="job__position">
+              <a href="https://lookerstudio.google.com/s/nITNU-Yr44c"
+                >Дашборд TOP Google trends</a
+              >
+              [Looker Studio, Google BigQuery, SQL]
+            </p>
+            <ul class="job__skills-list">
+              <li class="job__skill-item">
+                <span class="uk"
+                  >Проєкт дашборду для аналізу найпопулярніших пошукових запитів
+                  в Україні у 2024 році базується на використанні хмарної бази
+                  даних "Google Trends - International", яка була завантажена в
+                  Google BigQuery. Ця база даних була оброблена за допомогою
+                  мови SQL та експортована в Looker Studio для візуалізації.
+                  Оскільки політика Google обмежує кількість запитів до бази
+                  даних, вона була переміщена на локальне сховище і оновлюється
+                  вручну.
+                </span>
+
+                <span class="en"></span>
+              </li>
+            </ul>
+
+            <p class="job__position dashboard">
+              <a href="https://lookerstudio.google.com/s/unTz9VhYTys"
+                >Динаміка економічних та демографічних показників України за 25
+                років
+              </a>
+              [Looker Studio, Google BigQuery, SQL]
+            </p>
+            <ul class="job__skills-list">
+              <li class="job__skill-item">
+                <span class="uk"
+                  >Розподіл економічних і демографічних показників України за
+                  період з 1998 по 2022 рік на підставі даних з платформи The
+                  World Bank, отримана у CSV форматі та розміщена на BigQuery з
+                  подальшою візуалізацією у Looker Studio.
+                </span>
+
+                <span class="en"></span>
               </li>
             </ul>
           </div>
@@ -170,7 +227,7 @@
 
           <div class="job__container section-title__job__container">
             <h4 class="job__title">
-              <span class="uk">АТ "IR Bank"</span>
+              <span class="uk">IR Bank</span>
               <span class="en">IR Bank</span>
             </h4>
             <p class="job__position">
@@ -188,23 +245,21 @@
             <ul class="job__skills-list">
               <li class="job__skill-item">
                 <span class="uk"
-                  >Контроль та оптимізація витрат підприємства [SAP ERP]</span
+                  >Контроль та оптимізація витрат підприємства</span
                 >
                 <span class="en"
-                  >Control and optimization of company expenses [SAP ERP]</span
+                  >Control and optimization of company expenses</span
                 >
               </li>
               <li class="job__skill-item">
                 <span class="uk"
                   >Облік та аналіз фінансових операцій на їх відповідність
-                  бюджетним планам у розрізі статей бюджету, P&L [SAP ERP,
-                  Excel]</span
-                >
+                  бюджетним планам у розрізі статей бюджету, P&L
+                </span>
                 <span class="en"
                   >Accounting and financial transaction analysis to ensure
-                  budget items are in line with plans for the budget [SAP ERP,
-                  Excel]</span
-                >
+                  budget items are in line with plans for the budget
+                </span>
               </li>
               <li class="job__skill-item">
                 <span class="uk"
@@ -239,11 +294,11 @@
               <li class="job__skill-item">
                 <span class="uk"
                   >Впровадження та адміністрування сервісу електронного обміну
-                  документів [Вчасно]</span
+                  документів</span
                 >
                 <span class="en"
                   >Implementation and administration of electronic document
-                  exchange service [Vchasno]</span
+                  exchange service</span
                 >
               </li>
             </ul>
@@ -251,16 +306,15 @@
 
           <div class="job__container section-title__job__container">
             <h4 class="job__title">
-              <span class="uk">АТ "Сбербанк"</span
-              ><span class="en">Sberbank</span>
+              <span class="uk">Сбербанк</span><span class="en">Sberbank</span>
             </h4>
             <p class="job__position">
-              <span class="uk">Провідний спеціаліст відділу логістики</span
+              <span class="uk">Спеціаліст відділу логістики</span
               ><span class="en">Lead Specialist, Logistics Department</span>
             </p>
             <p class="job__duration">
-              <span class="uk">2010 – 2014 (4 роки)</span
-              ><span class="en">2010 – 2014 (4 years)</span>
+              <span class="uk">2012 – 2016 (4 роки)</span
+              ><span class="en">2012 – 2016 (4 years)</span>
             </p>
             <ul class="job__skills-list">
               <li class="job__skill-item">
@@ -274,9 +328,7 @@
                 >
               </li>
               <li class="job__skill-item">
-                <span class="uk"
-                  >Організація та контроль закупівель для банку</span
-                >
+                <span class="uk">Організація та контроль закупівель банку</span>
                 <span class="en"
                   >Organization and oversight of procurement for the bank</span
                 >
@@ -303,8 +355,8 @@
               ><span class="en">News Editor</span>
             </p>
             <p class="job__duration">
-              <span class="uk">2014 – 2016 (2 роки)</span
-              ><span class="en">2014 – 2016 (2 years)</span>
+              <span class="uk">2010 – 2012 (2 роки)</span
+              ><span class="en">2010 – 2012 (2 years)</span>
             </p>
             <ul class="job__skills-list">
               <li class="job__skill-item">
@@ -378,26 +430,35 @@
         </div>
 
         <ul class="skills-list">
-          <li class="skills-item">HTML</li>
-          <li class="skills-item">CSS, SASS</li>
-          <li class="skills-item">BEM</li>
-          <li class="skills-item">Responsive/Adaptive design</li>
-          <li class="skills-item">JavaScript</li>
-          <li class="skills-item">WordPress</li>
-          <li class="skills-item">QA, Jira</li>
-          <li class="skills-item">GIT</li>
-          <li class="skills-item">VSCode, Figma</li>
-          <li class="skills-br"></li>
-          <!-- from "other skills" section: -->
-
+          <div class="skills-category">Аналіз та візуалізація даних:</div>
           <li class="skills-item">Power BI</li>
-          <li class="skills-item">PivotChart Excel</li>
-          <li class="skills-item">Google Analytics</li>
+          <li class="skills-item">Excel</li>
           <li class="skills-item">Google BigQuery</li>
           <li class="skills-item">Looker Studio</li>
-          <li class="skills-item">SAP ERP</li>
+          <li class="skills-item">Google Analytics</li>
+
+          <div class="skills-category">Управління БД:</div>
           <li class="skills-item">SQL</li>
-          <li class="skills-item">AI chatbot queries</li>
+
+          <div class="skills-category">Веб-розробка:</div>
+          <li class="skills-item">HTML</li>
+          <li class="skills-item">CSS</li>
+          <!-- <li class="skills-item">BEM</li> -->
+          <!-- <li class="skills-item">Responsive/Adaptive design</li> -->
+          <li class="skills-item">JavaScript</li>
+          <li class="skills-item">REST API</li>
+
+          <div class="skills-category">ШІ-чатботи:</div>
+          <li class="skills-item">ChatGPT</li>
+          <li class="skills-item">Gemini</li>
+
+          <div class="skills-category">Керування проєктами та ресурсами:</div>
+
+          <!-- <li class="skills-item">WordPress</li> -->
+          <li class="skills-item">Jira</li>
+          <li class="skills-item">GIT</li>
+          <li class="skills-item">VSCode, Figma</li>
+          <li class="skills-item">SAP ERP</li>
           <li class="skills-item">Siebel</li>
         </ul>
 
@@ -441,6 +502,6 @@
         </ul>
       </aside>
     </div>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>

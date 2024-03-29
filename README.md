@@ -1,3 +1,3 @@
-# cv-cv
+# cv-frontend-Ihor-Mokrov
 
-CV
+CV Frontend developer Ihor Mokrov

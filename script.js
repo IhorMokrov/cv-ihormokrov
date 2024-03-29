@@ -2,6 +2,7 @@
   const button = document.querySelector('.change-language');
 
   button.addEventListener('click', function () {
+    console.log('fd');
     const ukTextElements = document.querySelectorAll('.uk');
     const enTextElements = document.querySelectorAll('.en');
 
