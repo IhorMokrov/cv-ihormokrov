@@ -1,0 +1,17 @@
+@media print {
+  body {
+    padding: 0;
+  }
+
+  .wrapper {
+    border: none;
+  }
+
+  .change-language {
+    display: none;
+  }
+
+  @page {
+    size: 1182px 1844px;
+  }
+}

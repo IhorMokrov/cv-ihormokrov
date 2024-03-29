@@ -1,0 +1,19 @@
+* {
+  font-family: Ubuntu;
+}
+
+a:hover {
+  scale: 1.1;
+  color: $text-green;
+}
+
+.skills-item:hover {
+  scale: 1.1;
+  cursor: default;
+
+  background-color: $icons-green;
+}
+
+.uk {
+  display: none;
+}
