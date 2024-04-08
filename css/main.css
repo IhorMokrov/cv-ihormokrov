@@ -275,10 +275,6 @@ a:hover {
   background-color: rgb(68, 147, 153);
 }
 
-.en {
-  display: none;
-}
-
 body {
   padding-top: 10px;
   padding-bottom: 12px;
@@ -634,6 +630,7 @@ body {
 }
 
 .uk.button {
+  display: none;
   width: 90%;
   height: 90%;
   background-image: url(../images/uk.svg);
@@ -656,6 +653,10 @@ body {
 
 .change-language:hover {
   cursor: pointer;
+}
+
+.en {
+  display: none;
 }
 
 @media print {
