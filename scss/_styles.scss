@@ -204,6 +204,10 @@ body {
   text-decoration: underline;
 }
 
+.section-title.work-experience {
+  margin-top: 40px;
+}
+
 .section-title.education {
   margin-top: 40px;
 }
@@ -287,4 +291,8 @@ body {
   &:first-child {
     margin-left: 10px;
   }
+}
+
+.education_container {
+  margin-top: 0px;
 }
